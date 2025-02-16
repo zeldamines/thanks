@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+            text-align: center;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .thank-you-container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            z-index: 2;
+            text-align: center;
+        }
+        h1, p {
+            color: #00ff88;
+        }
+        .email-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #00ff88;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .email-button:hover {
+            background: #00cc66;
+        }
+    </style>
+</head>
+<body>
+    <video class="video-bg" autoplay loop muted>
+        <source src="neon-bg.mp4" type="video/mp4">
+    </video>
+    <div class="thank-you-container">
+        <h1>Thank You!</h1>
+        <p>Your registration has been successfully submitted.</p>
+        <p>Send your logo to our email below:</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zeldamines3@gmail.com&su=Ask%20Questions%20and%20Upload%20Your%20Logo%20and%20Send" class="email-button">Upload Your Logo</a>
+    </div>
+</body>
+</html>
